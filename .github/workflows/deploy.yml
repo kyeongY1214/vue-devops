@@ -33,7 +33,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-
+        
+      - name : Test Unit
+        run: yarn test:unit
+        
       - name: Bulid page
         run: yarn build
         env:
